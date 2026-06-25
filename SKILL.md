@@ -43,6 +43,7 @@ wechat_article.html
 
 The file must contain:
 
+- No `<!DOCTYPE html>`.
 - No `<html>`, `<head>`, `<body>`, `<meta>`, `<title>`, or `<link>`.
 - No `<style>` or `<script>`.
 - No HTML comments.
@@ -74,6 +75,7 @@ Allowed common tags:
 Avoid or do not use:
 
 ```html
+<!DOCTYPE html>
 <html>
 <head>
 <body>
@@ -386,11 +388,12 @@ Confirm:
 
 Confirm:
 
+- No `<!DOCTYPE html>`.
 - No `<html>`, `<head>`, `<body>`, `<meta>`, `<title>`, or `<link>`.
 - No `<style>` or `<script>`.
 - No HTML comments.
 - All visual styles are inline.
-- No risky CSS terms: `position`, `float`, `clear`, `z-index`, `filter`, `columns`, `@font-face`.
+- No risky CSS terms: `position`, `float`, `clear`, `z-index`, `filter`, `columns`, `@font-face`, `transform`, or negative margins.
 - No fixed heights on text containers that can clip text.
 - No UTF-8 BOM or invisible leading character at the beginning of the generated HTML.
 
